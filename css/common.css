@@ -1,5 +1,11 @@
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -239,4 +245,36 @@ a:focus {
   border: 0;
   padding: 0;
   background: transparent;
+}
+
+/* common 레이아웃 */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.appFooter {
+  width: 100%;
+}
+
+/* common 헤더 */
+.appHeader {
+  background-color: silver;
+
+}
+
+/* common네비게이션 */
+.appNavigation {
+  background-color: purple;
+
+}
+
+/* common 메인 콘텐츠 */
+.appMain {
+  background-color: lime;
+}
+
+/* common 푸터 */
+.appFooter {
+  background-color: orange;
 }

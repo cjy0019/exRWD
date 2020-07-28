@@ -1,0 +1,41 @@
+/* 데스크탑 기본 글자 크기 */
+body {
+  font-size: 1.4rem;
+  background-color: yellow;
+}
+
+/* 데스크탑 레이아웃 */
+.appHeader,
+.appMain {
+  width: 1000px;
+}
+
+.appNavigation {
+  width: 100%;
+}
+
+.container {
+  justify-content: center;
+}
+
+/* 데스크탑 헤더 */
+.appHeader {
+  background-color: silver;
+
+}
+
+/* 데스크탑 네비게이션 */
+.appNavigation {
+  background-color: purple;
+
+}
+
+/* 데스크탑 메인 콘텐츠 */
+.appMain {
+  background-color: lime;
+}
+
+/* 데스크탑 푸터 */
+.appFooter {
+  background-color: orange;
+}
