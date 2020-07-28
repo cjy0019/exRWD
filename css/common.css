@@ -260,7 +260,13 @@ a:focus {
 /* common 헤더 */
 .appHeader {
   background-color: silver;
+  display: grid;
+}
 
+.memberOnly {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 /* common네비게이션 */
