@@ -223,6 +223,7 @@ a:focus {
   color: #f00;
 }
 
+legend,
 .a11yHidden {
   position: absolute;
   width: 1px;
@@ -259,7 +260,6 @@ a:focus {
 
 /* common 헤더 */
 .appHeader {
-  background-color: silver;
   display: grid;
 }
 
@@ -267,6 +267,19 @@ a:focus {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+}
+
+.memberOnly .divider {
+  margin: 0 5px;
+
+}
+
+/* common 검색 폼 */
+input[type="search"] {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
 }
 
 /* common네비게이션 */
