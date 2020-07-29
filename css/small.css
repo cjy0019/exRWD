@@ -64,8 +64,64 @@ input[type="search"] {
 }
 
 /* 모바일 네비게이션 */
-.appNavigation {
-  background-color: purple;
+
+/* 모바일 메뉴 제어 버튼 */
+.buttonBurger {
+  width: 35px;
+  height: 35px;
+  background-color: blue;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.burgerBar {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  transition: all 200ms ease-in-out;
+}
+
+.round {
+  border-radius: 20px;
+}
+
+.positionTop {
+  top: 0;
+}
+
+.positionMiddle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.positionBottom {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.isAct .positionTop {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  /* 미들의 위치로 온 후에 회전해라 */
+}
+
+.isAct .positionMiddle {
+  transform: translateY(-50%) translateX(-105%);
+}
+
+.isAct .positionBottom {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  /* 미들의 위치로 온 후에 회전해라 */
+}
+
+
+
+.menu__list {
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +132,18 @@ input[type="search"] {
 
 /* 모바일 메인 콘텐츠 */
 .appMain {
-  background-color: lime;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+
+.book,
+.news,
+.board,
+.favorite,
+.twitter {
+  width: 100%;
+  height: 10vh;
 }
 
 /* 모바일 푸터 */

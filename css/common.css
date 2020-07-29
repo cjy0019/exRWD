@@ -283,10 +283,7 @@ input[type="search"] {
 }
 
 /* common네비게이션 */
-.appNavigation {
-  background-color: purple;
-
-}
+.appNavigation {}
 
 /* common 메인 콘텐츠 */
 .appMain {
