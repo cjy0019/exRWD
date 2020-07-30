@@ -119,15 +119,68 @@ input[type="search"] {
   /* 미들의 위치로 온 후에 회전해라 */
 }
 
-
-
 .menu__list {
   position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  padding: 20px;
+}
+
+.isAct .menu__list {
+  transform: none;
+}
+
+.menu__subMenu {
+  width: 100%;
+  font-size: 1.6rem;
+  display: none;
+}
+
+.menu__subMenu li {
+  margin: 10px 0;
+}
+
+.menu__subMenu a {
+  display: block;
+  padding: 5px 0;
+}
+
+.menuAct .menu__subMenu {
+  display: block;
+}
+
+.menu__link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+}
+
+/* .menu__item {
+  display: flex;
+  flex-flow: row wrap;
+} */
+
+
+
+.menu__list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(10px);
+  -moz-filter: blur(6px)
 }
 
 /* 모바일 메인 콘텐츠 */
